@@ -39,18 +39,63 @@ Tipos de Selectores
           propiedad: valor;
         }
       - Hijo directo
+
+        Selecciona elementos que son hijos directos de un elemento padre.
+
+        elemento > elementosHijos {
+          propiedades: valor;
+      }
+
       - Elemento Adyacente 
+
+        Selecciona el primer elemento inmediatamente después del otro. (Su hermano inmediato o en ingles Siblings)
+
+        elemento + elementoAdyacente {
+          propiedad: valor;
+      }
+
       - Hermano general 
+
+      Selecciona todos los elementos hermanos después de un elemento. 
+
+      elemento ~ elementoHermanos {
+        propiedad: valor;
+    }
   
   5. Selectores de Atributos
   
       - Atributo 
+
+        Selecciona elementos según el atributo que indiquemos. Sin importar el valor. 
+
+       elemento[atributo] {
+        propiedad: valor;
+      }
+
       - Atributo - Valor
+
+        Selecciona elementos según el atributo y el valor que indiquemos. 
+
+       elemento[atributo=valor] {
+        propiedad: valor;
+    }
     
   6. Selectores Avanzados
 
       - Pseudo-clases
+
+        Seleccionamos elementos en un estado en particular. 
+
+        elemento:pseudoclase {
+          propiedad: valor;
+      }
       - Pseudo-elementos
+
+        Selecciona partes específicas de un elemento en html 
+
+        elemento::pseudoelemento {
+          propiedad: valor; 
+      }
   
 */ 
 
@@ -125,4 +170,72 @@ aside section {
   text-align: center;
   padding: 24px;
   background-color:darkslategray;
+}
+
+/* Combinados - Hijos Directos */
+
+ul > li {
+  background-color:darkslategray;
+}
+
+.lista > li {
+  font-size: 20px;
+  color:cornsilk;
+}
+
+/* Combinados - Elemento Adyacente */
+
+h3 + ul {
+  list-style: none;
+}
+
+.bro + li {
+  background-color: cadetblue;
+}
+
+/* Combinados - Hermano General */
+
+.bro + li ~ li {
+  background-color:powderblue;
+}
+
+.tercero ~ li {
+  color:darkslategray;
+  font-size: 40px;
+}
+
+/* SELECTORES DE ATRIBUTO */
+
+a[href] {
+  display: block;
+  text-decoration: none;
+  color:darkslategrey
+}
+
+/* Selector de Atributo con Valor */
+
+a[href="https://www.instagram.com"] {
+  font-size: 48px;
+  color:darkslategray;
+}
+
+/* Pseudo-clases */
+
+a:hover {
+  background-color: powderblue;
+  color:black; 
+}
+
+a:focus {
+  border: 10px darkslategrey
+}
+
+/* Pseudo-elementos */
+
+a::after {
+  content: " 🎀";
+}
+
+a::before {
+  content: "Este es un enlace hacia: "; 
 }
