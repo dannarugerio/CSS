@@ -1,0 +1,114 @@
+/* Fuentes Personalizadas
+
+    FUENTES EXTERNAS 
+    
+    Llamadas desde servidores remotos. 
+
+    Google Fonts 
+
+    Es un servicio o catálogo de fuentes que podemos usar de manera gratuita en internet.
+
+      - Optimizadas para digital 
+      - Gratuitas de uso comercial
+      - Curadas y de alta calidad 
+      - Código de vinculación para web.
+      
+    https://fonts.google.com/
+
+    1. Selecciona la fuente y trae el código de incrustación "embed code" al html y pegarlo dentro de las etiquetas "head". 
+    
+    2. Definimos las reglas CSS para los elementos a los que se las queremos aplicar. Usamos las propiedades font-family, font-weight, font-style, para las tipografías estáticas.
+    
+    FUENTES INTERNAS 
+    
+    Llamamos desde nuestro propio servidor o carpeta de recursos. 
+
+    1. Debemos tener los archivos en un carpeta específica. 
+    2. Formatos comunes son .ttf .otf .woff .woff2 etc...
+    3. Declaramos en CSS @font-face
+
+    @font-face {
+        font-family: "nombreFuente"; // Dos palabras entre ""
+        src: url(ubicación); //Ubicación y formato entre ""
+     }
+
+  4. Creamos la regla CSS 
+
+    selector {
+      font-family: nombreFuente, respaldo;
+    } 
+
+*/
+
+/* Tipografías estáticas */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;  /* Elige el grosor de la tipografía */
+  font-style: italic; /* Elige si es italica o cursiva */
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; 
+}
+
+/* Tipografías Variables */
+
+/*  .title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 876;
+  font-style: italic;
+  transition: font-weight 1s ease;
+}
+
+.title:hover {
+  font-weight: 182;
+  transition: font-weight 1s ease;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 456;
+  font-style: normal;
+}*/ 
+
+/* 
+Elegir dos fuentes distintas. Una para título, una para párrafo. Crear la regla CSS para cada elemento con selector de Id 
+Comentar los códigos pasados
+ */
+
+#title {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; 
+} 
+
+/* Fuentes Internas */
+
+@font-face {
+  font-family: "Equila";
+  src: url("./fonts/Equila.otf"), format("otf");
+} 
+
+@font-face {
+  font-family: "Telematic"; 
+  src: url("./fonts/Telematic.otf"), format("otf") ;
+}
+
+#title {
+  font-family: "Equila", sans-serif;
+}
+
+#text {
+  font-family: "Telematic", sans-serif; 
+}
