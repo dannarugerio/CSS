@@ -1,0 +1,66 @@
+
+/* Fuentes: Las fuentes son un aspecto clave en el diseño web, incluyen en la estética legibilidad y gerarquía visual.
+
+Por Estilo o categoria
+  
+  -Serif
+  -Sans-serif
+  -Monospace
+  -Script -> script
+  *Fantasy  -> Decorative
+
+Por nombre o categoría
+
+  -Arial
+  -Times new Roman
+  -Verdana
+  -Geneva
+
+- Los valores que tienen más de una palabla se escriben entre comillas " " o ''
+
+- Se recomienda usar fuentes de respaldo, si por alguna razon no se carga la fuente principal se mostraran o cargaran las fuentes secundarias.
+
+    -Arial, Verdana, Sans-serif
+
+  Fuentes Personalizadas 
+  
+      Fuentes Externas
+
+      Son recursos que traemos de servidores remotos.
+
+      -Google fonts
+      -Adove Fonts
+      -Font squirrel
+      -...
+
+      Fuentes internas
+
+      Son fuentes que tenemos en nuestro propio servidor o sistema de carpetas
+
+      -Descargamos
+      -Guardamos en una carpeta espesifica de nuestro sitio Web
+
+*/
+html {
+  /*  por estilo o categoria */
+  font-family: serif;       /* Default  patinada*/  
+  font-family: sans-serif;  /* sin patines, palo serif */
+  font-family: monospace;   /* mono-espaciado */
+  font-family: cursive;     /* script o escrito a mano */
+  font-family: fantasy;     /* decorativa */
+
+  /* Por nombre de familia tipografica */
+
+  font-family:  Arial;
+  font-family: "Times Ner Roman";
+  font-family: font-family: Verdana;
+  font-family: "Gill sans";
+  font-family: "Courier New";
+
+  /* Fuenters de respaldo */
+  font-family:  Arial. Helvetica, Sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
