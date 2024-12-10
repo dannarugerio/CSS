@@ -20,17 +20,36 @@ Principales
 
   - text-decoration -> Añade una línea transversal al texto. Recibe los valores: none, underline, oveline, line-through 
 
+  - text-transform -> Controla la capitalización del texto. Recibe los valores; uppercase, lowercase y capitalize. 
+
+  - line-height -> Espacio entre las líneas. Recibe valores en px, %, em, rem, un valor sin unidad será relativo al tamaño de la fuente. 
+
+  - letter-spacing -> Espacio entre letras. Recibe valores en px, %, em y rem. 
+
+  -word-spacing -> Espacio entre palabra. Recibe valores en px, em y rem.
+  
+  - text-shadow -> Sombra del rexto.Recibe valores en el siguiente orden: offset-x offset-y blur color
+
+  10px 10px 10px red -> Derecha y Abajo 
+
+  -10px -10px -10px blue -> Izquierda y Arriba 
 */ 
 
 h1 {
   color:lightpink; /* Keywords */
   font-family:Verdana, Helvetica; 
-  font-size: 64px;
+  font-size: 120px;
   font-size: 100%; /* 16px = 100% */ 
   font-size:xx-large; 
   font-style: oblique;
   text-align: center; 
   text-decoration: overline;
+  text-transform: uppercase; 
+  letter-spacing: 20px;
+  letter-spacing: 1rem;
+  letter-spacing: 2em;
+  letter-spacing: normal;
+  text-shadow: 10px 10px 5px white
 }
 
 p {
@@ -41,7 +60,18 @@ p {
   font-size: medium;
   font-style: normal;
   text-align: left;
-  text-decoration: none; 
+  text-decoration: none;
+  text-transform: lowercase; 
+  text-transform: capitalize;
+  line-height: 24px;
+  line-height: 150%;
+  line-height: 4;
+  line-height: 1rem;
+  line-height: 1em; 
+  word-spacing: 60px;
+  word-spacing: 2rem;
+  word-spacing: 5em;
+  word-spacing: normal;
 }
 
 .important {
