@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color:beige;
+  background-color: darkslategray
+} 
+
+/* Box Model 
+    Es un concepto que describe como los elementos de una página web se organizan y calcua su tamaño. 
+    
+      1. Contenido (content)
+      Es el area donde se encuentra el texto, las imagenes y otro elemento hijo. El tamaño de esta area se defne con las propiedades width y heigth.
+      
+      2. Relleno (padding)
+      Es el espacio enre el contenido y el borde de la caja, Ayuda a crear un espacio interno al rededor del contenido.
+      
+      La propiedad de padding es un "shorthand" que controla los 4 lados posibles de la caja.
+          padding: top rigth buttom left;
+          padding: top left/rigth nuttom;
+          padding: top/bottom rigth/left
+          padding: t/r/b/l;
+
+      3. Borde (border)
+  
+      Es el biode que rodea el contenido y el contenido podemos personalizar su grozor, estilo y color tambien en una propidead shorthand
+
+          border; ancho estilo color
+
+          border-width: Valor;
+          border-color: VAlor;
+          border-style: Valor;
+      
+          border-top-color: Valor;
+          border-rigth-color: VAlor;
+          border-style: Valor;
+
+      Valores estilo borde:
+
+        -none
+        -hidden
+        -solid
+        -dotted
+        -dashed
+        -double
+        -groove
+        -ridge
+        -inset
+        -ouset
+
+      4. Margen (margin) 
+      Permite tener espacio entre el border de un elemento y otros elementos de la página. También es un "shorthand" 
+          margin: top right bottom left;
+          margin: top right/left bottom;
+          margin: top/bottom right/left; 
+          margin: t/r/b/l;
+
+          margin-top: valor;
+          margin-right: valor;
+          margin-buttom: valor;
+          margin-left: valor;
+
+
+*/ 
+
+/* Content */
+h2 {
+  padding: 24px;
+  border: 5px solid black;
+
+  margin: 8px 16px 24px 32 px; 
+
+  width: 200px;
+  height: 100px;
+  background-color: cadetblue; 
+}
+
+img {
+  padding: 24px 48px;
+
+  border-width: 10px;
+  border-style: inset;
+  border-color: aquamarine;
+  
+  margin: 12px 24px 48px;
+
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+ul {
+  padding: 24px 48px 64px;
+
+  border-top-width: 20px;
+  border-top-style: dashed;
+  border-top-color: darkseagreen;
+
+  border-left-width: 10px;
+  border-left-style: groove;
+  border-left-color: mediumaquamarine;
+
+  margin: 48px 8px; 
+
+  width: 400px;
+  height: auto;
+
+  list-style: none;
+  background-color: lightcyan;
+}
+
+li {
+  padding: 8px 16px 24px 32px;
+
+  border-bottom-width: 10px;
+  border-bottom-style: dotted;
+  border-bottom-color:lightseagreen; 
+
+  margin:12 px;
+  width: 200px;
+  height: 100px;
+  background-color: paleturquoise; 
+}
+
