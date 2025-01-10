@@ -1,0 +1,57 @@
+/* 
+  Border Radius 
+
+  Nos permite redondear las esquinas de los elementos en html. 
+
+        border-radius:
+
+  Es un shorthand (abreviatura) que engloba 4 propiedades: 
+        border-top-left-radius:
+        border-top-right-radius: 
+        border-bottom-right-radius:
+        border-bottom-left-radius:
+
+
+*/
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color:palevioletred;
+  color:white;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color:lightpink; 
+
+  border-radius: 32px;
+  border-radius: 32px 72px; /* v1 -> top left, bottom right | v2 -> top right, bottom left */
+  border-radius: 32px 64px 120px; /* v1 -> tl | v2 -> tr y bl | v3 -> br */
+  border-radius: 32px 48px 72px 120px; /* tl | tr | br | bl */ 
+}
+
+.box-2 {
+  width: 300px;
+  height: 300px;
+  background-color:rgb(252, 87, 115);
+
+  border-top-left-radius: 32px;
+  border-top-right-radius: 48px;
+  border-bottom-right-radius: 72px;
+  border-bottom-left-radius: 120px;
+}
+
+.box-3 {
+  width: 300px; /* 1:1 */
+  /* height: 600px */ /* Resultaria en un elipse */
+  height: 300px; /* Resultaria en un circulo */
+  background-color: crimson;
+
+  border-radius: 150px; 
+  border-radius: 50%;
+
+}
